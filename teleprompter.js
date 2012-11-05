@@ -123,7 +123,7 @@ Teleprompter.prototype.getNodeOverlay = function(){
 $(document).ready(function(){
     var tp = new Teleprompter($('#prompter_input').val(), document.body);
     $('#submit').click(function(){
-        tp.start();
         tp.text = $('#prompter_input').val();
+        tp.start();
     })
 });
